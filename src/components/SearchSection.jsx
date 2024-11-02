@@ -9,7 +9,7 @@ const SearchSection = ({getWeatherDetails}) => {
     const handleCitySearch = (e) => {
         e.preventDefault();
         const searchInput = e.target.querySelector(".search-input")
-        const API_URL = ` http://api.weatherapi.com/v1//forecast.json?key=${API_KEY}&q=${searchInput.value}`;
+        const API_URL = ` https://api.weatherapi.com/v1//forecast.json?key=${API_KEY}&q=${searchInput.value}`;
         console.log(searchInput.value);
         getWeatherDetails(API_URL); // Fetches weather details for the entered city
     }
